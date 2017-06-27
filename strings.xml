@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">The Triple B Backhills BBQ on Best</string>
+    <string name="business_address">Address: 510 Best Ave Coeur d\'Alene, ID 83814</string>
+    <string name="business_phone">Phone: (208) 755&#8211;3797</string>
+    <string name="business_price_range">Price Range: $11&#8211;30</string>
+    <string name="business_profile">$$ &#8211; Barbecue, Food Trucks, American (Traditional)</string>
+    <string name="call_view">Call</string>
+    <string name="directions_view">Directions</string>
+    <string name="share_view">Share</string>
+    <string name="website_view">Website</string>
+    <string name="hours">Hours: 11AM&#8211;7PM</string>
+</resources>
