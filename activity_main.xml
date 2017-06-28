@@ -1,14 +1,9 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
         <TextView
             android:id="@+id/business_profile"
@@ -30,71 +25,133 @@
             <TextView
                 android:id="@+id/directions_text_view"
                 style="@style/HorizontalButtonStyle"
-                android:onClick="getDirections"
                 android:drawableTop="@drawable/ic_directions"
+                android:onClick="getDirections"
                 android:text="@string/directions_view" />
 
 
             <TextView
                 android:id="@+id/share_text_view"
                 style="@style/HorizontalButtonStyle"
-                android:onClick="shareWebsite"
                 android:drawableTop="@drawable/ic_share"
+                android:onClick="shareWebsite"
                 android:text="@string/share_view" />
 
             <TextView
                 android:id="@+id/website_text_view"
                 style="@style/HorizontalButtonStyle"
+                android:drawableTop="@drawable/ic_shop"
                 android:onClick="openWebsite"
-                android:drawableTop="@drawable/ic_web"
                 android:text="@string/website_view" />
+
+        </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/picture_image_slider"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ruben" />
+
+            <TextView
+                android:id="@+id/address_text_view"
+                style="@style/TextStyle"
+                android:drawableStart="@drawable/ic_location"
+                android:onClick="showBusinessLocationMap"
+                android:text="@string/business_address" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/phone_number_text_view"
+                style="@style/TextStyle"
+                android:drawableStart="@drawable/ic_phone"
+                android:onClick="dialPhoneNumber"
+                android:text="@string/business_phone" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/facebook_link_text_view"
+                style="@style/TextStyle"
+                android:drawableStart="@drawable/ic_web"
+                android:onClick="openFacebook"
+                android:text="@string/facebook" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/browse_menu_text_view"
+                style="@style/TextStyle"
+                android:drawableStart="@drawable/ic_food_menu"
+
+                android:text="@string/food_menu" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/price_range_text_view"
+                style="@style/TextStyle"
+                android:drawableStart="@drawable/ic_money"
+                android:text="@string/business_price_range" />
+
+            <View style="@style/DividerStyle" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/time_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:drawableStart="@drawable/ic_time"
+                    android:gravity="center_vertical"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/hours1_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/time_text_view"
+                    android:text="@string/hours1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/hours2_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toEndOf="@+id/time_text_view"
+                    android:text="@string/hours2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
 
 
         </LinearLayout>
 
-        <View style="@style/DividerStyle" />
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/address_list"
-            style="@style/TextStyle"
-            android:drawableStart="@drawable/ic_location"
-            android:onClick="showBusinessLocationMap"
-            android:text="@string/business_address" />
-
-        <View style="@style/DividerStyle" />
-
-        <TextView
-            android:id="@+id/phone_number_list"
-            style="@style/TextStyle"
-            android:drawableStart="@drawable/ic_phone"
-
-            android:onClick="dialPhoneNumber"
-            android:text="@string/business_phone" />
-
-        <View style="@style/DividerStyle" />
-
-        <TextView
-            android:id="@+id/price_range_list"
-            style="@style/TextStyle"
-            android:drawableStart="@drawable/ic_money"
-
-            android:text="@string/business_price_range" />
-
-        <View style="@style/DividerStyle" />
-
-        <TextView
-            android:id="@+id/hours_list"
-            style="@style/TextStyle"
-
-            android:drawableStart="@drawable/ic_time"
-            android:text="@string/hours" />
-
-        <View style="@style/DividerStyle" />
-
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
 
 
 
