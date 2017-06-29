@@ -1,12 +1,30 @@
 <resources>
     <string name="app_name">The Triple B Backhills BBQ on Best</string>
-    <string name="business_address">Address: 510 Best Ave Coeur d\'Alene, ID 83814</string>
-    <string name="business_phone">Phone: (208) 755&#8211;3797</string>
-    <string name="business_price_range">Price Range: $11&#8211;30</string>
-    <string name="business_profile">$$ &#8211; Barbecue, Food Trucks, American (Traditional)</string>
+    <string name="business_address">510 Best Ave Coeur d\'Alene, ID 83814</string>
+    <string name="business_phone">(208) 755&#8211;3797</string>
+    <string name="business_price_range">$11&#8211;30</string>
+    <string name="business_profile">Barbecue, Food Trucks, American</string>
     <string name="call_view">Call</string>
     <string name="directions_view">Directions</string>
     <string name="share_view">Share</string>
-    <string name="website_view">Website</string>
-    <string name="hours">Hours: 11AM&#8211;7PM</string>
+    <string name="website_view">Shop</string>
+    <string name="hours">Mon, Wed-Sat 11AM&#8211;7PM\nSun 11AM&#8211;5PM</string>
+    <string name="hours_page">More Business Information</string>
+    <string name="facebook">Facebook</string>
+    <string name="food_menu">View Menu</string>
+    <string name="picture_image_slider">image_slider</string>
+    <string name="menu_page">Menu</string>
+    <string name="menu_item_ruben_title">Ruben Sandwich $9.95</string>
+    <string name="menu_item_ruben_description">Corned beef, Swiss cheese, sauerkraut, and Russian dressing, grilled between slices of rye bread.</string>
+    <string name="menu_item_junk_yard_title">Junk Yard Dog $6.95</string>
+    <string name="menu_item_junk_yard_description">Pulled pork, beans, mac and cheese and cole slaw piled on top of a &#188; lb. all beef hot dog.</string>
+    <string name="menu_item_egg_title">Armadillo Egg $4.95</string>
+    <string name="menu_item_egg_description">Jalapeno peppers stuffed with cream and cheddar cheese then wrapped in sausage and bacon then smoked.</string>
+    <string name="menu_item_hot_mess_title">Hot Mess Sandwich $6.95</string>
+    <string name="menu_item_hot_mess_description">Our smoked tri&#8211;tip stacked on our baked roll and topped with our Backhills BBQ sauce.</string>
+    <string name="menu_item_pork_burnt_title">Pork Belly Sandwich $9.95</string>
+    <string name="menu_item_pork_burnt_description">Our pork belly ends are smoked and generously piled into our baked roll and smothered with our Backhills BBQ sauce.</string>
+    <string name="menu_item_pulled_pig_title">Pulled Pig Sandwich $5.95</string>
+    <string name="menu_item_pulled_pig_description">Our delicious smoked pulled pork generously piled into our baked roll and smothered with our Backhills BBQ sauce.</string>
+
 </resources>

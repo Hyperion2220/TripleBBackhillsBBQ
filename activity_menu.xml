@@ -21,23 +21,22 @@
             android:src="@drawable/pork_burnt_end_sandwich" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_pork_burnt_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_pork_burnt_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -50,23 +49,22 @@
             android:src="@drawable/junk_yard_dog" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_junk_yard_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_junk_yard_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -79,23 +77,22 @@
             android:src="@drawable/egg" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_egg_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_egg_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -108,23 +105,22 @@
             android:src="@drawable/pulled_pig" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_pulled_pig_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_pulled_pig_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -137,23 +133,22 @@
             android:src="@drawable/hot_mess" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_hot_mess_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_hot_mess_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
 
         </LinearLayout>
@@ -168,23 +163,22 @@
             android:src="@drawable/ruben" />
 
         <LinearLayout
+            style="@style/ContentBlockStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_edge_top_bottom_left_right">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_ruben_title"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_item_ruben_description"
-                android:textAppearance="?android:textAppearanceSmall" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
