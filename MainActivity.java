@@ -1,14 +1,23 @@
 package com.triplebbackhillsbbq.triplebbackhillsbbq;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.Collections;
+import me.relex.circleindicator.CircleIndicator;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    //Variables for the Image Slider functionality.
+    private static final Integer[] menuItems = {R.drawable.ruben, R.drawable.eggs, R.drawable.beans, R.drawable.ribs, R.drawable.mac, R.drawable.chicken};
+    private ArrayList<Integer> menuItemsArray = new ArrayList<>();
 
 
     @Override
@@ -17,11 +26,14 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the browse menu text view
+        //Part of the Image Slider functionality. Executes the init method.
+        init();
+
+        // Opens the food menu page by setting a listener on the "browse_menu_text_view" text view.
         TextView textView = (TextView) findViewById(R.id.browse_menu_text_view);
         // Set a click listener on that View
         textView.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the menu category is clicked on.
+            // The code in this method will be executed when the menu text view is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the MenuActivity}
@@ -30,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    //Part of the Image Slider functionality.
+    private void init() {
+        ViewPager mPager;
+        Collections.addAll(menuItemsArray, menuItems);
+        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager.setAdapter(new CustomAdapter(MainActivity.this, menuItemsArray));
+        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
+        indicator.setViewPager(mPager);
+
 
     }
 
@@ -60,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     // Uses the default phone app to call the business phone number.
     public void dialPhoneNumber(View view) {
         String phoneNumber = "2087553797";
@@ -81,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "Share website using:"));
         }
     }
+
 
     // Opens the business website using the default website app on the device.
     public void openWebsite(View view) {
