@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Uses the default phone app to call the business phone number.
     public void dialPhoneNumber(View view) {
-        String phoneNumber = "2087553797";
+        String phoneNumber = getString(R.string.business_phone_intent);
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
         // If no phone application is available, the following code will prevent the app from crashing.
@@ -97,19 +97,19 @@ public class MainActivity extends AppCompatActivity {
 
     // Prompts the user to select and app to share the yelp website with other users.
     public void shareWebsite(View view) {
-        String pageURL = "https://www.yelp.com/biz/the-triple-b-backhills-bbq-on-best-coeur-d-alene";
+        String pageURL = getString(R.string.business_yelp_url);
         Intent intent = new Intent(Intent.ACTION_SEND).setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, pageURL);
         // If no share application is available, the following code will prevent the app from crashing.
         if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(Intent.createChooser(intent, "Share website using:"));
+            startActivity(Intent.createChooser(intent, getString(R.string.share_website)));
         }
     }
 
 
     // Opens the business website using the default website app on the device.
     public void openWebsite(View view) {
-        String pageURL = "http://www.backhillsbbq.com";
+        String pageURL = getString(R.string.backhills_url);
         Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(pageURL));
         // If no share application is available, the following code will prevent the app from crashing.
         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Opens the business website using the default website app on the device.
     public void openFacebook(View view) {
-        String pageURL = "https://www.facebook.com/backhillsgrillguys";
+        String pageURL = getString(R.string.facebook_url);
         Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(pageURL));
         // If no share application is available, the following code will prevent the app from crashing.
         if (intent.resolveActivity(getPackageManager()) != null) {

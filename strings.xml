@@ -26,5 +26,9 @@
     <string name="menu_item_pork_burnt_description">Our pork belly ends are smoked and generously piled into our baked roll and smothered with our Backhills BBQ sauce.</string>
     <string name="menu_item_pulled_pig_title">Pulled Pig Sandwich $5.95</string>
     <string name="menu_item_pulled_pig_description">Our delicious smoked pulled pork generously piled into our baked roll and smothered with our Backhills BBQ sauce.</string>
-
+    <string name="facebook_url">"https://www.facebook.com/backhillsgrillguys"</string>
+    <string name="backhills_url">"http://www.backhillsbbq.com"</string>
+    <string name="business_yelp_url">"https://www.yelp.com/biz/the-triple-b-backhills-bbq-on-best-coeur-d-alene"</string>
+    <string name="business_phone_intent">"2087553797"</string>
+    <string name="share_website">"Share website using:"</string>
 </resources>
