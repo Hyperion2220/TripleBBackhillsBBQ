@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Style for single line with single icon lists -->
+    <style name="ListItem" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_vertical_list_item</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textSize">@dimen/single_line_text_size</item>
+    </style>
+    <!-- Style for horizontal tab like buttons -->
+    <style name="HorizontalButtonStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/single_line_text_size</item>
+    </style>
+    <!-- Style for horizontal divider -->
+    <style name="DividerStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+    <!-- Style for content block cards -->
+    <style name="ContentBlockStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:paddingTop">@dimen/content_block_top_bottom_padding</item>
+        <item name="android:paddingBottom">@dimen/content_block_top_bottom_padding</item>
+        <item name="android:paddingStart">@dimen/content_block_start_end_padding</item>
+        <item name="android:paddingEnd">@dimen/content_block_start_end_padding</item>
+    </style>
+</resources>

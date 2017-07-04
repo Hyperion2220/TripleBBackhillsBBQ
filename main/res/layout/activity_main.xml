@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/call_text_view"
+            style="@style/HorizontalButtonStyle"
+            android:drawableTop="@drawable/ic_phone_white"
+            android:onClick="dialPhoneNumber"
+            android:text="@string/call_view" />
+
+        <TextView
+            android:id="@+id/directions_text_view"
+            style="@style/HorizontalButtonStyle"
+            android:drawableTop="@drawable/ic_directions_white"
+            android:onClick="getDirections"
+            android:text="@string/directions_view" />
+
+
+        <TextView
+            android:id="@+id/share_text_view"
+            style="@style/HorizontalButtonStyle"
+            android:drawableTop="@drawable/ic_share_white"
+            android:onClick="shareWebsite"
+            android:text="@string/share_view" />
+
+        <TextView
+            android:id="@+id/website_text_view"
+            style="@style/HorizontalButtonStyle"
+            android:drawableTop="@drawable/ic_shop_white"
+            android:onClick="openWebsite"
+            android:text="@string/website_view" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_alignParentTop="true" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/address_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_map"
+                android:onClick="showBusinessLocationMap"
+                android:text="@string/business_address" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/phone_number_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_phone"
+                android:onClick="dialPhoneNumber"
+                android:text="@string/business_phone" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/facebook_link_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_web"
+                android:onClick="openFacebook"
+                android:text="@string/facebook" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/browse_menu_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_food_menu"
+                android:text="@string/food_menu" />
+
+            <View style="@style/DividerStyle" />
+
+            <TextView
+                android:id="@+id/price_range_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_money"
+                android:text="@string/business_price_range" />
+
+            <View style="@style/DividerStyle" />
+
+
+            <TextView
+                android:id="@+id/hours_text_view"
+                style="@style/ListItem"
+                android:drawableStart="@drawable/ic_time"
+                android:text="@string/hours" />
+
+            <View style="@style/DividerStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
